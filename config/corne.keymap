@@ -24,7 +24,7 @@
 &kp TAB  &kp Q  &kp W  &kp E         &kp R  &kp T         &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &kp LCTRL&kp A  &kp S  &kp D         &kp F  &kp G         &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT&kp Z  &kp X  &kp C         &kp V  &kp B         &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RALT
-                       &lt 3 ESCAPE  &to 1  &kp RETURN    &kp SPACE  &to 2  &kp RGUI
+                       &lt 3 ESCAPE  &mo 1  &kp RETURN    &kp SPACE  &mo 2  &kp RGUI
             >;
         };
 
@@ -53,10 +53,10 @@
 
             label = "Symbol";
             bindings = <
-&kp TAB  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL&trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT&trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                           &kp LGUI  &to 0     &kp SPACE    &kp RET    &to 2      &kp RALT
+&kp TAB              &kp EXCL              &kp AT                &kp HASH          &kp DLLR      &kp PRCNT     &kp CARET   &kp AMPS          &kp KP_MULTIPLY  &kp LPAR      &kp RPAR         &kp BSPC
+&kp LCTRL            &kp F1                &kp F2                &kp F3            &kp F4        &kp F5        &kp F6      &kp F7            &kp F8           &kp F9        &kp F10          &kp F11
+&kp C_BRIGHTNESS_AUTO&kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp LC(UP_ARROW)  &kp LC(DOWN)  &trans        &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT       &kp C_VOL_DN  &kp C_VOLUME_UP  &kp F12
+                                                                 &kp LGUI          &to 0         &kp RETURN    &kp SPACE   &to 2             &kp RALT
             >;
         };
 
