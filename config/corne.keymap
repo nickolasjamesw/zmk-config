@@ -21,10 +21,10 @@
 
             label = "Base";
             bindings = <
-  &kp TAB  &kp Q  &kp W       &kp E   &kp R       &kp T        &kp Y   &kp U      &kp I    &kp O     &kp P  &kp BSPC
-&kp LCTRL  &kp A  &kp S       &kp D   &kp F       &kp G        &kp H   &kp J      &kp K    &kp L  &kp SEMI   &kp SQT
-&kp LSHFT  &kp Z  &kp X       &kp C   &kp V       &kp B        &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RALT
-                         &kp ESCAPE  &tog 1  &kp RETURN    &kp SPACE  &tog 2   &kp RGUI
+&kp TAB  &kp Q  &kp W  &kp E         &kp R  &kp T         &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&kp LCTRL&kp A  &kp S  &kp D         &kp F  &kp G         &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT&kp Z  &kp X  &kp C         &kp V  &kp B         &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RALT
+                       &lt 3 ESCAPE  &to 1  &kp RETURN    &kp SPACE  &to 2  &kp RGUI
             >;
         };
 
@@ -37,10 +37,10 @@
 
             label = "Lower";
             bindings = <
-  &kp TAB    &kp DELETE         &kp PIPE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &kp BACKSLASH      &kp KP_DIVIDE        &kp N7        &kp N8  &kp N9  &kp KP_SUBTRACT          &kp BSPC
-   &trans  &bt BT_SEL 0     &bt BT_SEL 1      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp UNDERSCORE    &kp KP_MULTIPLY  &kp NUMBER_4        &kp N5  &kp N6         &kp PLUS  &kp RS(KP_EQUAL)
-&kp LSHFT         &to 0  &kp RS(PERCENT)        &kp LEFT_BRACE        &kp RIGHT_BRACE   &kp RS(COLON)       &kp KP_COMMA  &kp NUMBER_1  &kp NUMBER_2  &kp N3       &kp PERIOD           &kp RET
-                                                        &trans                 &trans          &trans             &trans        &trans        &kp N0
+&kp TAB  &kp DELETE    &kp PIPE         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH     &kp KP_DIVIDE    &kp N7        &kp N8        &kp N9  &kp KP_SUBTRACT  &kp BSPC
+&trans   &bt BT_SEL 0  &bt BT_SEL 1     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDERSCORE    &kp KP_MULTIPLY  &kp NUMBER_4  &kp N5        &kp N6  &kp PLUS         &kp RS(KP_EQUAL)
+&kp LSHFT&to 0         &kp RS(PERCENT)  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp RS(COLON)     &kp KP_COMMA     &kp NUMBER_1  &kp NUMBER_2  &kp N3  &kp PERIOD       &kp RET
+                                        &trans                &to 1                  &trans            &trans           &to 0         &kp N0
             >;
         };
 
@@ -53,10 +53,19 @@
 
             label = "Raise";
             bindings = <
-  &kp TAB  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR   &kp BSPC
-&kp LCTRL    &trans  &trans    &trans    &trans     &trans    &kp MINUS  &kp EQUAL         &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT    &trans  &trans    &trans    &trans     &trans    &kp UNDER   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LGUI    &trans  &kp SPACE      &kp RET     &trans         &kp RALT
+&kp TAB  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
+&kp LCTRL&trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
+&kp LSHFT&trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
+                           &kp LGUI  &to 0     &kp SPACE    &kp RET    &to 2      &kp RALT
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans&trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &kp PAGE_UP  &kp PAGE_DOWN
+&trans&trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans       &trans
+&trans&trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans       &trans
+                      &trans  &to 0   &trans    &trans    &trans    &trans
             >;
         };
     };
