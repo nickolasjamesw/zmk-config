@@ -24,7 +24,7 @@
 &kp TAB      &kp Q             &kp D        &kp R           &kp W           &kp B         &kp J      &kp F            &kp U            &kp P        &kp SEMI           &kp BSPC
 &kp BACKSPACE&mt LEFT_SHIFT A  &mt LCTRL S  &mt LEFT_ALT H  &mt LEFT_GUI T  &kp G         &kp Y      &mt RIGHT_GUI N  &mt RIGHT_ALT E  &mt RCTRL O  &mt RIGHT_SHIFT I  &kp SQT
 &kp LSHFT    &kp Z             &kp X        &kp M           &kp C           &kp V         &kp K      &kp L            &kp COMMA        &kp DOT      &kp FSLH           &kp RALT
-                                            &lt 3 ESCAPE    &mo 1           &kp RETURN    &kp SPACE  &mo 2            &kp RGUI
+                                            &lt 3 ESCAPE    &lt 1 COLON     &kp RETURN    &kp SPACE  &lt 2 BACKSPACE  &kp RGUI
             >;
         };
 
