@@ -21,10 +21,10 @@
 
             label = "Base";
             bindings = <
-&kp TAB      &kp Q             &kp D        &kp R           &kp W           &kp B         &kp J      &kp F            &kp U            &kp P        &kp SEMI           &kp BSPC
-&kp BSPC     &mt LSHFT A       &mt LCTRL S  &mt LEFT_ALT H  &mt LEFT_GUI T  &kp G         &kp Y      &mt RIGHT_GUI N  &mt RIGHT_ALT E  &mt RCTRL O  &mt RIGHT_SHIFT I  &kp SQT
-&kp LSHFT    &kp Z             &kp X        &kp M           &kp C           &kp V         &kp K      &kp L            &kp COMMA        &kp DOT      &kp FSLH           &kp RALT
-                                            &lt 3 ESCAPE    &lt 1 COLON     &kp RETURN    &kp SPACE  &lt 2 BSPC       &kp RGUI
+&kp TAB    &kp Q  &kp D  &kp R         &kp W        &kp B         &kp J      &kp F       &kp U      &kp P    &kp SEMI  &kp BSPC
+&kp LCTRL  &kp A  &kp S  &kp H         &kp T        &kp G         &kp Y      &kp N       &kp E      &kp O    &kp I     &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp M         &kp C        &kp V         &kp K      &kp L       &kp COMMA  &kp DOT  &kp FSLH  &kp RALT
+                         &lt 3 ESCAPE  &lt 1 COLON  &kp RETURN    &kp SPACE  &lt 2 BSPC  &kp RGUI
             >;
         };
 
@@ -37,10 +37,10 @@
 
             label = "Code";
             bindings = <
-&kp TAB  &kp DELETE    &kp PIPE         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH     &kp KP_DIVIDE    &kp N7        &kp N8        &kp N9  &kp KP_SUBTRACT  &kp BSPC
-&trans   &bt BT_SEL 0  &bt BT_SEL 1     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDERSCORE    &kp KP_MULTIPLY  &kp NUMBER_4  &kp N5        &kp N6  &kp PLUS         &kp RS(KP_EQUAL)
-&kp LSHFT&to 0         &kp RS(PERCENT)  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp RS(COLON)     &kp KP_COMMA     &kp NUMBER_1  &kp NUMBER_2  &kp N3  &kp PERIOD       &kp RET
-                                        &trans                &to 1                  &trans            &trans           &to 0         &kp N0
+&kp TAB    &kp DELETE    &kp PIPE         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH     &kp KP_DIVIDE    &kp N7        &kp N8        &kp N9  &kp KP_SUBTRACT  &kp BSPC
+&trans     &bt BT_SEL 0  &bt BT_SEL 1     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDERSCORE    &kp KP_MULTIPLY  &kp NUMBER_4  &kp N5        &kp N6  &kp PLUS         &kp RS(KP_EQUAL)
+&kp LSHFT  &to 0         &kp RS(PERCENT)  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp RS(COLON)     &kp KP_COMMA     &kp NUMBER_1  &kp NUMBER_2  &kp N3  &kp PERIOD       &kp RET
+                                          &trans                &to 1                  &trans            &trans           &to 0         &kp N0
             >;
         };
 
@@ -53,20 +53,20 @@
 
             label = "Symbol";
             bindings = <
-&kp TAB              &kp EXCL              &kp AT                &kp HASH          &kp DLLR      &kp PRCNT     &kp CARET         &kp AMPS    &kp KP_MULTIPLY  &kp LPAR           &kp RPAR         &kp BSPC
-&kp LCTRL            &kp F1                &kp F2                &kp F3            &kp F4        &kp F5        &kp F6            &kp F7      &kp F8           &kp F9             &kp F10          &kp F11
-&kp C_BRIGHTNESS_AUTO&kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp LC(UP_ARROW)  &kp LC(DOWN)  &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_MUTE       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp F12
-                                                                 &kp LGUI          &to 0         &kp RETURN    &kp SPACE         &to 2       &kp RALT
+&kp TAB                &kp EXCL              &kp AT                &kp HASH          &kp DLLR      &kp PRCNT     &kp CARET         &kp AMPS    &kp KP_MULTIPLY  &kp LPAR           &kp RPAR         &kp BSPC
+&kp LCTRL              &kp F1                &kp F2                &kp F3            &kp F4        &kp F5        &kp F6            &kp F7      &kp F8           &kp F9             &kp F10          &kp F11
+&kp C_BRIGHTNESS_AUTO  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp LC(UP_ARROW)  &kp LC(DOWN)  &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_MUTE       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp F12
+                                                                   &kp LGUI          &to 0         &kp RETURN    &kp SPACE         &to 2       &kp RALT
             >;
         };
 
         layer_3 {
             label = "Navigation";
             bindings = <
-&trans&trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &kp PAGE_UP  &kp PAGE_DOWN
-&trans&trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans       &trans
-&trans&trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans       &trans
-                      &trans  &to 0   &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &kp PAGE_UP  &kp PAGE_DOWN
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans       &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans       &trans
+                        &trans  &to 0   &trans    &trans    &trans    &trans
             >;
         };
     };
