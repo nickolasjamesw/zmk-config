@@ -53,10 +53,10 @@
 
             label = "Symbol";
             bindings = <
-&kp TAB              &kp EXCL              &kp AT                &kp HASH          &kp DLLR      &kp PRCNT     &kp CARET         &kp AMPS          &kp KP_MULTIPLY  &kp LPAR           &kp RPAR      &kp BSPC
-&kp LCTRL            &kp F1                &kp F2                &kp F3            &kp F4        &kp F5        &kp F6            &kp F7            &kp F8           &kp F9             &kp F10       &kp F11
-&kp C_BRIGHTNESS_AUTO&kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp LC(UP_ARROW)  &kp LC(DOWN)  &trans        &kp K_PLAY_PAUSE  &kp K_PLAY_PAUSE  &kp K_MUTE       &kp K_VOLUME_DOWN  &kp K_VOL_UP  &kp F12
-                                                                 &kp LGUI          &to 0         &kp RETURN    &kp SPACE         &to 2             &kp RALT
+&kp TAB              &kp EXCL              &kp AT                &kp HASH          &kp DLLR      &kp PRCNT     &kp CARET  &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
+&kp LCTRL            &kp F1                &kp F2                &kp F3            &kp F4        &kp F5        &kp F6     &kp F7    &kp F8           &kp F9    &kp F10   &kp F11
+&kp C_BRIGHTNESS_AUTO&kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp LC(UP_ARROW)  &kp LC(DOWN)  &trans        &trans     &trans    &trans           &trans    &trans    &kp F12
+                                                                 &kp LGUI          &to 0         &kp RETURN    &kp SPACE  &to 2     &kp RALT
             >;
         };
 
