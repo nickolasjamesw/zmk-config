@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -20,10 +21,10 @@
 
             label = "Base";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E         &kp R      &kp T         &kp Y      &kp U       &kp I      &kp O    &kp P     &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D         &kp F      &kp G         &kp H      &kp J       &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C         &kp V      &kp B         &kp N      &kp M       &kp COMMA  &kp DOT  &kp FSLH  &kp RALT
-                         &lt 3 ESCAPE  &lt 1 TAB  &kp RETURN    &kp SPACE  &lt 2 BSPC  &kp RGUI
+&kp TAB    &kp Q    &kp W  &kp E         &kp R      &kp T         &kp Y      &kp U       &kp I      &kp O    &kp P     &kp BSPC
+&kp LCTRL  &kp A    &kp S  &kp D         &kp F      &kp G         &kp H      &kp J       &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &lt 4 Z  &kp X  &kp C         &kp V      &kp B         &kp N      &kp M       &kp COMMA  &kp DOT  &kp FSLH  &kp RALT
+                           &lt 3 ESCAPE  &lt 1 TAB  &kp RETURN    &kp SPACE  &lt 2 BSPC  &kp RGUI
             >;
         };
 
@@ -52,20 +53,29 @@
 
             label = "Symbol";
             bindings = <
-&kp TAB                &kp EXCL              &kp AT                &kp HASH          &kp DLLR      &kp PRCNT     &kp CARET         &kp AMPS    &kp KP_MULTIPLY  &kp LPAR           &kp RPAR         &kp BSPC
-&kp LCTRL              &kp F1                &kp F2                &kp F3            &kp F4        &kp F5        &kp F6            &kp F7      &kp F8           &kp F9             &kp F10          &kp F11
-&kp C_BRIGHTNESS_AUTO  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp LC(UP_ARROW)  &kp LC(DOWN)  &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_MUTE       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp F12
-                                                                   &kp LGUI          &to 0         &kp RETURN    &kp SPACE         &to 2       &kp RALT
+&kp TAB    &kp EXCL              &kp AT                &kp HASH          &kp DLLR      &kp PRCNT     &kp CARET         &kp AMPS    &kp KP_MULTIPLY  &kp LPAR           &kp RPAR         &kp BSPC
+&kp LCTRL  &kp F1                &kp F2                &kp F3            &kp F4        &kp F5        &kp F6            &kp F7      &kp F8           &kp F9             &kp F10          &kp F11
+&kp LSHFT  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp LC(UP_ARROW)  &kp LC(DOWN)  &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_MUTE       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp F12
+                                                       &kp ESC           &trans        &kp RETURN    &kp SPACE         &trans      &kp RIGHT_GUI
             >;
         };
 
         layer_3 {
             label = "Navigation";
             bindings = <
-&trans  &trans          &kp UP_ARROW  &trans     &trans  &trans    &trans    &trans    &trans  &trans     &kp PAGE_UP  &kp PAGE_DOWN
-&trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans       &trans
-&trans  &trans          &trans        &trans     &trans  &trans    &trans    &trans    &trans  &trans     &trans       &trans
-                                      &trans     &to 0   &trans    &trans    &trans    &trans
+&kp TAB     &trans          &kp UP_ARROW  &trans        &trans        &trans       &kp LC(C)  &kp PG_DN  &kp PG_UP      &trans     &kp LC(P)  &trans
+&kp LCTRL   &kp LEFT_ARROW  &kp DOWN      &kp RIGHT     &trans        &trans       &kp LEFT   &kp DOWN   &kp UP         &kp RIGHT  &trans     &trans
+&kp LSHIFT  &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans       &kp LG(X)  &kp LG(C)  &kp LG(V)      &trans     &trans     &kp RALT
+                                          &kp ESC       &trans        &kp ENTER    &kp SPACE  &trans     &kp RIGHT_GUI
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&kp TAB    &trans    &trans        &trans   &trans  &trans       &trans     &kp N7  &kp N8  &kp N9  &trans  &trans
+&kp LCTRL  &trans    &trans        &trans   &trans  &trans       &trans     &kp N4  &kp N5  &kp N6  &trans  &trans
+&kp LSHFT  &kp LALT  &kp LEFT_GUI  &trans   &trans  &trans       &trans     &kp N1  &kp N2  &kp N3  &trans  &kp RALT
+                                   &kp ESC  &trans  &kp ENTER    &kp SPACE  &trans  &kp N0
             >;
         };
     };
